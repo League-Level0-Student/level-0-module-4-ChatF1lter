@@ -20,9 +20,10 @@ String dimes = JOptionPane.showInputDialog("How many dimes do you have?");
 		// Ask the user how many quarters they have, and convert their answer
 int dimesNumber = Integer.parseInt(dimes);
 		// Calculate how much money the user has.  Hint: Use a double variable 
- 
-		// Tell the user how much money they have in dollars and cents format (e.g. $6.75)
-
+String quarters = JOptionPane.showInputDialog("How many quarters do you have?");
+ // Tell the user how much money they have in dollars and cents format (e.g. $6.75)
+int quartersNumber = Integer.parseInt(quarters);
+JOptionPane.showMessageDialog(null, "Your total is $" + String.format("%.2f",(quartersNumber*0.25 + dimesNumber*0.10 + nickelsNumber*0.05)));
 	}
 }
 
