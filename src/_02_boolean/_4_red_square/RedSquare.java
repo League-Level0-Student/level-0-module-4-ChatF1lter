@@ -23,11 +23,21 @@ public class RedSquare {
 		// operator. 
 		if(isRed && isSquare) {
 			drawRedSquare();
-		}
+		} else if(!isRed && isSquare) {
+			drawBlueSquare();
+		} else if(isRed && !isSquare) {
+			drawRedTriangle();
+		} else if(!isRed && !isSquare) {
+			drawBlueTriangle();
+		} 
 		else {
             JOptionPane.showMessageDialog(null, "No shape was drawn!");
-        }
-		
+        } 
+		if(drewRedSquare || drewBlueSquare) {
+			JOptionPane.showMessageDialog(null, "You drew a square!");
+		} else if(drewRedTriangle || drewBlueTriangle) {
+			JOptionPane.showMessageDialog(null, "You drew a triangle!");
+		} 
 		// 1. Run the program and notice no shape is drawn.
 		
 		// 2. Initialize isRed to true instead of false and run the program 
@@ -48,6 +58,8 @@ public class RedSquare {
 		//    blue square and blue triangle drawn.
 		
 		// Much like the "and" operator, the "or" operator || can be used to 
+	
+	
 		// combine two boolean statements. However the statement becomes true
 		// if either boolean is true rather than only if both are true.
 		
