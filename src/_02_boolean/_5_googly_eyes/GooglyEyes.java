@@ -59,8 +59,14 @@ background(face);
 fill(255,255,255);
 ellipse(275,200,175,65);
 ellipse(550,200,175,65);
-if(mouseX<275) {
-	mouseX=275;
+if(mouseX<225) {
+	mouseX=225;
+} else if(mouseX>325) {
+	mouseX=325;
+} else if(mouseY<192) {
+	mouseY=192;
+} else if(mouseY>208) {
+	mouseY=208;
 }
 fill(0,0,0);
 ellipse(mouseX,mouseY,50,50);
