@@ -14,7 +14,7 @@ import processing.core.PImage;
  * 
  * 1. Find a Where's Waldo image and copy it into the /images folder at the
  *    top level of this module OR use the provided waldo.jpg image.
- * 
+  
  * 2. Declare a variable for the image:
  *    PImage face;
  *
